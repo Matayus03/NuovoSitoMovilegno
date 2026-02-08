@@ -1,0 +1,167 @@
+.about-page {
+    background-color: #f7f7f7;
+    padding-bottom: 80px;
+}
+
+.about-hero {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: #b5b5b5;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-content {
+    max-width: 2000px;
+    margin: -60 auto 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-block {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-block:first-child {
+    border-radius: 0 0 16px 16px;
+}
+
+.about-block h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #111;
+    position: relative;
+}
+
+.about-block h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #8fc9db;
+    margin-top: 10px;
+}
+
+.about-block p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.about-block p:last-child {
+    margin-bottom: 0;
+}
+
+.about-block.highlight {
+    background-color: #8fc9db;
+    color: #000;
+}
+
+.about-block.highlight h2 {
+    color: #000;
+}
+
+.about-block.highlight h2::after {
+    background-color: #000;
+}
+
+.about-block.highlight p {
+    color: #000;
+}
+
+.about-origins {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-origins-image img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-cta {
+    background-color: #e0f2f8;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #005a78;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #8fc9db;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+@media (min-width: 769px) {
+
+    .cta-button:hover {
+        background-color: #0096b8;
+        transform: translateY(-2px);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+    }
+
+    .about-block {
+        padding: 25px;
+    }
+
+    .about-block h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-origins {
+        grid-template-columns: 1fr;
+    }
+
+    .about-origins-image {
+        order: -1;
+    }
+
+    .contact-cta {
+        padding: 60px 20px;
+    }
+
+    .contact-cta h2 {
+        font-size: 1.6rem;
+    }
+}
