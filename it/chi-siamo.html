@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Chi Siamo - Movilegno</title>
+
+        <link rel="stylesheet" href="../CSS/general-style.css">
+        <link rel="stylesheet" href="../CSS/chi-siamo-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="barra">
+                <a href="index.html" class="logo-link">
+                    <img class="logo" src="../IMMAGINI/logoMovilegno.png" alt="Logo Movilegno">
+                </a>
+            </div>
+        </header>
+        
+        <button class="menu-toggle" aria-label="Apri Menu">
+            <svg class="menu-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                <rect x="0" y="2" width="30" height="4" rx="2" fill="#000"/>
+                <rect x="0" y="13" width="30" height="4" rx="2" fill="#000"/>
+                <rect x="0" y="24" width="30" height="4" rx="2" fill="#000"/>
+            </svg>
+        </button>
+        <nav class="menu-overlay">
+            <ul class="menu">
+                <li><a href="index.html" class="link">Home</a></li>
+                <!-- MODIFICARE I LINK EVENTUALMENTE -->
+                <li><a href="chi-siamo.html">Chi siamo</a></li>
+                <li><a href="prodotti.html">Prodotti</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="usato.html">Usato</a></li>
+                
+                <li class="language-menu">
+                    <button class="current-lang">Lingua</button>
+                    <ul class="language-dropdown">
+                        <li><a href="index.html">🇮🇹 ITA</a></li>
+                        <li><a href="../en/index.html">🇬🇧 ENG</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="about-page">
+            <section class="about-hero">
+                <h1>Chi siamo</h1>
+                <p>
+                    Esperienza, competenza e soluzioni su misura per la lavorazione del legno.
+                </p>
+            </section>
+
+            <section class="about-content">
+                <div class="about-block about-origins">
+                    <div class="about-origins-text">
+                        <h2>Le nostre origini</h2>
+                        <p>
+                            Movilegno nace nel 1997 dall'esperienza di <strong>Torresan Denis</strong>,
+                            dopo un lungo percorso professionale nel settore della meccanica
+                            applicata alla lavorazione del legno.
+                        </p>
+                        <p>
+                            Nel 2006 entra a far parte dell'azienda <strong>Perizzolo Cinzia</strong>,
+                            che affianca la realtà Movilegno nella gestione amministrativa e commerciale.
+                        </p>
+                    </div>
+
+                    <div class="about-origins-image">
+                        <img src="../IMMAGINI/AziendaFoto.png" alt="Sede Movilegno">
+                    </div>
+                </div>
+
+                <div class="about-block">
+                    <h2>Crescita e collaborazioni</h2>
+                    <p>
+                        Grazie a uno staff tecnico-operativo altamente qualificato,
+                        Movilegno collabora con aziende leader nella costruzione di
+                        impianti per segheria come Bongioanni e Artiglio.
+                    </p>
+                    <p>
+                        Nel tempo l'azienda ha realizzato impianti sempre più complessi
+                        e strutturati, sia in Italia che all'estero.
+                    </p>
+                </div>
+
+                <div class="about-block highlight">
+                    <h2>Il nostro metodo</h2>
+                    <p>
+                        Ogni progetto nasce da uno studio preliminare attento delle
+                        esigenze del cliente. Crediamo che il dialogo continuo tra
+                        cliente e costruttore sia la chiave per risultati concreti
+                        e duraturi.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <section class="contact-cta">
+            <h2>Vuoi maggiori informazioni?</h2>
+            
+            <a href="contatti.html" class="cta-button">Contattaci</a>
+        </section>
+
+        <footer>
+            <small class="footer-text">
+                © 2016 - <span id="year"></span> Movilegno srl - Via Asolana, 26G - 31017 Crespano del Grappa - TV
+            </small>
+            <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+        </footer>
+
+        <script src="../JS/menu-toggle.js"></script>
+    </body>
+</html>
