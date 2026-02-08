@@ -1,104 +1,16 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    
-        <title>Home - Movilegno</title>
-        <link rel="stylesheet" href="CSS/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <script>
+            const lang = navigator.language || navigator.userLanguage;
+            if (lang.startsWith('it')) {
+                window.location.href = "it/index.html";
+            } else {
+                window.location.href = "en/index.html";
+            }
+        </script>
     </head>
     <body>
-
-        <header>
-            <div class="barra">
-                <a href="index.html" class="logo-link">
-                    <img class="logo" src="Immagini/logoMovilegno.png" alt="Movilegno">
-                </a>
-                <div class="menu-container">
-                    <button class="menu-toggle" aria-label="Apri Menu">
-                        <img class="menu-svg" src="FileSVG/Menu.svg">
-                    </button>
-                    <ul class="menu">
-                        <li><a href="index.html" class="link">Home</a></li>
-                        <li><a href="Pagine/azienda.html" class="link">Azienda</a></li>
-                        <li class="has-submenu">
-                            <button class="submenu-toggle" aria-label="Apri submenu">
-                                <span class="icon-wrapper">
-                                    <img src="FileSVG/FGiu.svg" class="arrow-down">
-                                </span>    
-                            </button>
-                            <a href="Pagine/prodotti.html" class="link">Prodotti</a>
-                            <ul class="submenu">
-                                <li><a href="Pagine/ImpiantiDiSegheria.html">Impianti di segheria</a></li>
-                                <li><a href="Pagine/ImpiantiLegnaDaArdere.html">Impianti di legna da ardere</a></li>
-                                <li><a href="Pagine/Refilatrice.html">Refilatrice</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="Pagine/news.html" class="link">News</a></li>
-                        <li><a href="Pagine/contatti.html" class="link">Contatti</a></li>
-                        <li><a href="Pagine/usato.html" class="link">Usato</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-
-        <main id="principale" class="wrap">
-            <div class="slider">
-                <div class="dots"></div>
-                <div class="overlay">
-                    <h2 id="overlay-title"></h2>
-                    <a id="overlay-btn" class="btn-vedi" href="#">Vedi</a>
-                </div>
-                <!--MODIFICARE IMMAGINI-->
-                <img src="Immagini/ImpiantiSegheria.png" class="slide active">
-                <img src="Immagini/ImpiantiLegnaDaArdere.png" class="slide">
-                <img src="Immagini/Refilatrice.png" class="slide">
-                <img src="Immagini/Usato.png" class="slide">
-
-                <button class="prev">
-                    <img src="FileSVG/FSinistra.svg">
-                </button>
-                <button class="next">
-                    <img src="FileSVG/FDestra.svg">
-                </button>
-            </div>
-            <section class="hero" aria-label="Benvenuti">
-                <img src="Immagini/MovimentareIlLegno.png" class="hero-img" alt="MovimentareIlLegno"> <!--DA MODIFICARE-->
-                <p>Le soluzioni proposte da Movilegno nascono sempre da un attento studio preliminare delle esigenze del cliente: sappiamo, infatti, che soltanto una stretta collaborazione fra cliente e costruttore garantisce un buon risultato.</p> <!--DA MODIFICARE-->
-            </section>
-
-            <!--DA VEDERE RISULTATO-->
-            <section class="info-section">
-                <div class="info-card">
-                    <h3>Azienda</h3>
-                    <p>Scopri la nostra storia e le nostre competenze nel settore del legno.</p>
-                    <a href="Pagine/azienda.html">Leggi di più</a>
-                </div>
-                <div class="info-card">
-                    <h3>Prodotti</h3>
-                    <p>Impianti e macchinari innovativi per ogni esigenza di lavorazione del legno</p>
-                    <a href="Pagine/prodotti.html">Scopri</a>
-                </div>
-                <div class="info-card">
-                    <h3>News</h3>
-                    <p>Rimani aggiornato sulle ultime novità.</p>
-                    <a href="Pagine/news.html">Leggi</a>
-                </div>
-            </section>
-
-
-        </main>
-
-        <footer>
-            <small class="footer-text">
-                © 2016 - <span id="year"></span> Movilegno srl - Via Asolana, 26G - 31017 Crespano del Grappa - TV
-            </small>
-            <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
-        </footer>
-        <script src="JS/slider.js"></script>
-        <script src="JS/menu-toggle.js"></script>
     </body>
 </html>
