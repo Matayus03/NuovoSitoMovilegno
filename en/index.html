@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Movilegno designs and manufactures woodworking systems and machinery: sawmills, firewood, and customized solutions.">
+
+
+        <title>Home - Movilegno</title>
+
+        <link rel="stylesheet" href="../CSS/index-style.css">
+        <link rel="stylesheet" href="../CSS/general-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="barra">
+                <a href="index.html" class="logo-link">
+                    <img class="logo" src="../IMMAGINI/logoMovilegno.png" alt="Logo Movilegno">
+                </a>
+            </div>
+        </header>
+
+        <button class="menu-toggle" aria-label="Open Menu">
+            <svg class="menu-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                <rect x="0" y="2" width="30" height="4" rx="2" fill="#000"/>
+                <rect x="0" y="13" width="30" height="4" rx="2" fill="#000"/>
+                <rect x="0" y="24" width="30" height="4" rx="2" fill="#000"/>
+            </svg>
+        </button>
+        <nav class="menu-overlay">
+            <ul class="menu">
+                <li><a href="index.html" class="link">Home</a></li>
+                <!-- MODIFICARE I LINK EVENTUALMENTE -->
+                <li><a href="azienda.html">About us</a></li>
+                <li><a href="prodotti.html">Products</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contatti.html">Contact</a></li>
+                <li><a href="usato.html">Used</a></li>
+                
+                <li class="language-menu">
+                    <span class="current-lang">Language</span>
+                    <ul class="language-dropdown">
+                        <li><a href="../index.html">🇮🇹 ITA</a></li>
+                        <li><a href="../en/index.html">🇬🇧 ENG</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="../IMMAGINI/ImpiantiSegheria.png" alt="Movilegno sawmill plant">
+            </div>
+            <div class="slide">
+                <img src="../IMMAGINI/ImpiantiLegnaDaArdere.png" alt="Movilegno firewood system">
+            </div>
+            <div class="slide">
+                <img src="../IMMAGINI/Refilatrice.png" alt="Movilegno trimming machine">
+            </div>
+            <div class="slide">
+                <img src="../IMMAGINI/Usato.png" alt="used wood movers">
+            </div>
+
+            <button class="prev">
+                <svg class="arrow prev" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="next">
+                <svg class="arrow next" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 6 15 12 9 18"></polyline>
+                </svg>
+            </button>
+
+            <div class="dots"></div>
+        </div>
+
+        <main id="principale" class="wrap">
+            <section class="hero" aria-label="Welcome">
+                <img src="../IMMAGINI/MovimentareIlLegno.png" class="hero-img" alt="move the wood">
+                <p>The solutions proposed by Movilegno always arise from a careful preliminary study of the customer's needs: we know, in fact, that only close collaboration between customer and manufacturer guarantees a good result.</p> <!--DA MODIFICARE-->
+            </section>
+
+            <section class="info-section">
+                <div class="info-card">
+                    <h3>About us</h3>
+                    <p>Discover our history and our expertise in the wood sector.</p>
+                    <a href="azienda.html">Read more</a>
+                </div>
+                <div class="info-card">
+                    <h3>Products</h3>
+                    <p>Innovative systems and machinery for every woodworking need.</p>
+                    <a href="prodotti.html">Discover</a>
+                </div>
+                <div class="info-card">
+                    <h3>News</h3>
+                    <p>Stay up to date with the latest news.</p>
+                    <a href="news.html">Read</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <small class="footer-text">
+                © 2016 - <span id="year"></span> Movilegno srl - Via Asolana, 26G - 31017 Crespano del Grappa - TV
+            </small>
+            <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+        </footer>
+
+
+        <script src="../JS/menu-toggle.js"></script>
+        <script src="../JS/slider.js"></script>
+    </body>
+</html>
