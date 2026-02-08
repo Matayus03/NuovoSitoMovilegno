@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Contatti - Movilegno</title>
+
+        <link rel="stylesheet" href="../CSS/contatti-style.css">
+        <link rel="stylesheet" href="../CSS/general-style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <div class="barra">
+                <a href="../index.html" class="logo-link">
+                    <img class="logo" src="../IMMAGINI/logoMovilegno.png" alt="Logo Movilegno">
+                </a>
+            </div>
+        </header>
+
+        <button class="menu-toggle" aria-label="Apri Menu">
+                    <svg class="menu-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                        <rect x="0" y="2" width="30" height="4" rx="2" fill="#000"/>
+                        <rect x="0" y="13" width="30" height="4" rx="2" fill="#000"/>
+                        <rect x="0" y="24" width="30" height="4" rx="2" fill="#000"/>
+                    </svg>
+                </button>
+
+        <nav class="menu-overlay">
+            <ul class="menu">
+                <li><a href="../index.html" class="link">Home</a></li>
+                <li><a href="azienda.html">Chi siamo</a></li>
+                <li><a href="prodotti.html">Prodotti</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="usato.html">Usato</a></li>
+
+                <li class="language-menu">
+                    <span class="current-lang">Lingua</span>
+                    <ul class="language-dropdown">
+                        <li><a href="../index.html">🇮🇹 ITA</a></li>
+                        <li><a href="../en/index.html">🇬🇧 ENG</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="principale" class="wrap">
+            <section class="contatti-hero">
+                <h1>Contattaci</h1>
+                <p>
+                    Siamo a disposizione per informazioni, preventivi e assistenza.
+                </p>
+            </section>
+            
+            <section class="contatti-main">
+                <div class="contatti-info">
+                    <h2>Movilegno srl</h2>
+
+                    <p class="contatto-item">
+                        <svg class="contatto-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/>
+                        </svg>
+                        <span class="contatti-testo-indirizzo">    
+                            <strong>Indirizzo</strong><br>
+                            Via Asolana, 26G<br>
+                            31017 Crespano del Grappa (TV)
+                        </span>
+                    </p>
+                    <p class="contatto-item">
+                        <svg class="contatto-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M6.6 10.8c1.4 2.7 3.9 5.2 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1 .3 2 .5 3.1.5.7 0 1.3.6 1.3 1.3V20c0 .7-.6 1.3-1.3 1.3C9.8 21.3 2.7 14.2 2.7 5.3 2.7 4.6 3.3 4 4 4h3.4c.7 0 1.3.6 1.3 1.3 0 1.1.2 2.1.5 3.1.1.4 0 .9-.3 1.2l-2.3 2.2z"/>
+                        </svg>
+                        <span class="contatti-testo-telefono">
+                            <strong>Telefono</strong><br>
+                            <a href="tel:+390423539206">0423 539 206</a>
+                        </span>
+                    </p>
+                    <p class="contatto-item">
+                        <svg class="contatto-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span class="contatti-testo-email">
+                            <strong>Email</strong><br>
+                            <a href="mailto:info@movilegno.it">info@movilegno.it</a>
+                        </span>
+                    </p>
+                    <p class="contatto-item">
+                        <svg class="contatto-icon" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+
+                            <circle cx="12" cy="12" r="9"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2" />
+
+                            <line x1="12" y1="12" x2="12" y2="7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round" />
+
+                            <line x1="12" y1="12" x2="16" y2="12"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+
+
+                        <span class="contatti-testo-orari">
+                            <strong>Orari</strong><br>
+                            Lun-Ven: 8:00-12:00 / 14:00-18:00
+                        </span>
+                    </p>
+                </div>
+
+                <form class="contatti-form">
+                    <h2>Scrivici</h2>
+
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Messaggio" rows="5" required></textarea>
+
+                    <button type="submit">Invia messaggio</button>
+                </form>
+            </section>
+
+            <div class="map-consent" id="map-consent">
+                <p>
+                    Questa mappa è fornita da <strong>Google Maps</strong> e potrebbe installare cookie di terze parti.
+                </p>
+                <button id="accept-maps">Accetta e visualizza la mappa</button>
+            </div>
+
+            <div class="contatti-mappa" id="map-container" style="display: none;">
+                <iframe
+                    title="mappa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.4425399989814!2d11.842735115669967!3d45.816927979105494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b2eb7816f0461%3A0x786eedb35cd10956!2sVia%20Asolana%2C%2026G%2C%2031017%20Crespano%20del%20Grappa%20TV%2C%20Italia!5e0!3m2!1sit!2sit!4v1703280000000!5m2!1sit!2sit"
+                    loading="lazy"
+                    style="border: 0;"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </main>
+
+        <footer>
+            <small class="footer-text">
+                © 2016 - <span id="year"></span> Movilegno srl - Via Asolana, 26G - 31017 Crespano del Grappa - TV
+            </small>
+            <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+        </footer>
+
+        <script src="../JS/menu-toggle.js"></script>
+        <script src="../JS/consenso-mappa.js"></script>
+    </body>
+</html>
