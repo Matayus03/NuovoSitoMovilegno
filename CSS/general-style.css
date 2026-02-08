@@ -1,0 +1,267 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.barra {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 102;
+}
+
+.menu-svg rect {
+    transition: fill 0.3s;
+}
+
+.menu-toggle.open .menu-svg rect {
+    fill: #fff;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #000;
+    transition: right 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
+
+.menu-overlay.show {
+    right: 0;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.language-menu {
+    position: relative;
+}
+
+.current-lang {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 5px;
+    transition: color 0.3s ease;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.current-lang:focus {
+    outline: none;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    display: none;
+    flex-direction: column;
+    min-width: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.language-dropdown li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 769px) {
+
+    .language-menu .current-lang::after {
+        content: "▶";
+        font-size: 0.7rem;
+        margin-left: 5px;
+        transition: transform 0.3s;
+    }
+
+    .language-menu:hover .language-dropdown {
+        display: flex;
+    }
+
+    .language-dropdown li a:hover {
+        background-color: #8fc9db;
+        color: #000;
+    }
+
+    .current-lang:hover {
+        color: #8fc9db;
+    }
+
+    .menu > li > a:hover {
+        color: #8fc9db;
+    }
+
+    .logo:hover {
+        transform: scale(1.05);
+    }
+
+    .language-dropdown.show + .current-lang::after,
+    .language-menu:hover .current-lang::after {
+        transform: rotate(90deg);
+    }
+}
+
+.language-dropdown.show {
+    display: flex;
+}
+
+footer {
+    background-color: #8cc5d6;
+    color: #ffffff;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+footer .footer-text {
+    display: block;
+    margin: 0;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    a, button {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    button:focus, a:focus {
+        outline: none;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .barra {
+        position: relative;
+        justify-content: center;
+        padding: 12px 16px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .menu-toggle {
+        position: fixed;
+        transform: translateY(-60%);
+        right: 16px;
+        z-index: 102;
+    }
+
+    .menu-overlay {
+        width: 100%;
+        z-index: 101;
+    }
+
+    .menu-overlay.show {
+        right: 0;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu li a {
+        font-size: 1.4rem;
+    }
+
+    .language-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-dropdown {
+        display: none; 
+        position: static;
+        background-color: transparent;
+        flex-direction: column;
+    }
+
+    .language-dropdown li a {
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .language-dropdown.show {
+        display: flex;
+    }
+
+    .current-lang::after {
+        content: "▶";
+        font-size: 0.7rem;
+        margin-left: 6px;
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .current-lang.active::after {
+        transform: rotate(90deg);
+    }
+}
